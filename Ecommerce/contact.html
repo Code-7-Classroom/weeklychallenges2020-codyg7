@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontwesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html"
+        ><img
+          src="https://pbs.twimg.com/profile_images/796487883305664512/wYqaslIU_400x400.jpg"
+          alt=""
+          class="logo--img"
+      /></a>
+      <ul class="nav--links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav--burger">
+        <div class="nav--burger__line1"></div>
+        <div class="nav--burger__line2"></div>
+        <div class="nav--burger__line3"></div>
+      </div>
+    </nav>
+
+    <section class="contact--section">
+      <h1 class="contact--section--h1">Sign Up</h1>
+      <div class="border"></div>
+
+      <div id="error"></div>
+
+      <form
+        id="form"
+        action="index.html"
+        method="post"
+        class="contact--form"
+        name="Signup"
+      >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="contact--form--txt"
+          placeholder="Your Name"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact--form--txt"
+          placeholder="Your Email"
+        />
+        <input
+          type="tel"
+          name=""
+          id=""
+          class="contact--form--txt"
+          placeholder="Your Phone number"
+        />
+        <textarea
+          name=""
+          id=""
+          class="contact--form--txt"
+          placeholder="Comments"
+        ></textarea>
+        <input type="submit" value="send" class="contact--form--btn" />
+      </form>
+    </section>
+
+    <footer id="main--footer">
+      <ul class="main--footer--footerpages">
+        <li><a class="footer--links" href="index.html">Home</a></li>
+        <li><a class="footer--links" href="products.html">Products</a></li>
+        <li><a class="footer--links" href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer--copyright">Revival &copy; 2020, All Rights Reserved</p>
+      <div class="footer--social">
+        <a
+          class="footer--social-icon"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          class="footer--social-icon divider"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          class="footer--social-icon"
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+
+      <a class="footer--arrow" href="#"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
+  </body>
+</html>
