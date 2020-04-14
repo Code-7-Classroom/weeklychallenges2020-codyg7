@@ -21,11 +21,13 @@ function AddClass(element, name) {
 
 function RemoveClass(element, name) {
   //x[i] is element "Show" becomes name which is the class i want to remove
-  var arr1 = element.className.split(" ");
-  var arr2 = name.split(" "); //splits objects into different
+  var arr1 = element.className.split(" "); //split all items in arrays
+  var arr2 = name.split(" "); //splits objects into different strings
   for (var i = 0; i < arr2.length; i++) {
+    //initializing index to start, setting condition to as long as i is less than arr2.length, incrementing array
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
+      //while arr2 length is not negating one
+      arr1.splice(arr1.indexOf(arr2[i]), 1); //splice all items that dont match
     }
   }
   element.className = arr1.join(" "); //rejoins everything

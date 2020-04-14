@@ -58,6 +58,7 @@ nav {
 }
 
 @keyframes navLinkFade {
+  //invoking animations
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -65,9 +66,10 @@ nav {
   to {
     opacity: 1;
     transform: translateX(0px);
-  }
+  } //adding transition to links
 }
 
+//moving lines in burgers
 .toggle .nav--burger__line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }

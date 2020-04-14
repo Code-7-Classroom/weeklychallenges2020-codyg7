@@ -1,9 +1,10 @@
 // slideshow
 
-var i = 0;
-var images = [];
-var time = 3000;
+var i = 0; //starting point of index
+var images = []; //variable of images with an empty array
+var time = 3000; //time in ms between each picture
 
+//array list with image paths
 images[0] =
   "https://azzurrokids.nl/wp-content/uploads/2019/05/yeezy-raffle-banner.jpg";
 images[1] =
@@ -17,13 +18,15 @@ images[4] =
 images[5] = "https://wallpaperaccess.com/full/135377.jpg";
 images[6] =
   "https://hips.hearstapps.com/esq.h-cdn.co/assets/17/29/1500385858-supreme.jpg";
+
+//function to change the image
 function changeImg() {
   if (i < images.length - 1) {
-    i++;
+    i++; //incrementing by one
   } else {
-    i = 0;
+    i = 0; //resetting to 0 when done with the array
   }
-  document.slide.src = images[i];
+  document.slide.src = images[i]; //getting name attribute from html setting to first image
   setTimeout("changeImg()", time);
 }
 
