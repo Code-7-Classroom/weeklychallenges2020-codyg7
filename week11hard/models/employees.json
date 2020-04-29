@@ -1,0 +1,22 @@
+{
+  "employees": [
+    {
+      "name": "Jeff Bezos",
+      "id": 1,
+      "Salary": 10000000,
+      "Job": "Back End Dev"
+    },
+    {
+      "name": "Elon Musk",
+      "id": 2,
+      "Salary": 15000000,
+      "Job": "CEO"
+    },
+    {
+      "name": "Mark Zuckerburg",
+      "id": 3,
+      "Salary": 200000000,
+      "Job": "Real Estate Investor"
+    }
+  ]
+}
